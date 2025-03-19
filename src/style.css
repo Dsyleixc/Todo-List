@@ -31,10 +31,33 @@ body {
     padding: 1rem;
 }
 
+.nav-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+}
+
+.new-item-btn {
+    display: flex;
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-item-btn:hover {
+    background-color: #dfdfdf;
+    cursor: pointer;
+}
+
 .app-name {
     font-size: 0.8rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    align-self: start;
 }
 
 .user {
@@ -71,8 +94,17 @@ body {
     padding: 0.7rem 1.2rem;
 }
 
+.nav-item:hover {
+    background-color: #00000017;
+    cursor: pointer;
+}
+
 .clicked {
     background-color: #00000017;
+}
+
+.clicked:hover {
+    cursor: default;
 }
 
 .item-count {
@@ -140,4 +172,8 @@ body {
     align-items: center;
     width: 30px;
     height: 30px;
+}
+
+.item-status:hover {
+    cursor: pointer;
 }
