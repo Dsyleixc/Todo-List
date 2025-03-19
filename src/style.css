@@ -20,9 +20,15 @@ body {
     display: flex;
     flex-direction: column;
     width: 30%;
-    padding: 1rem;
     z-index: 1;
     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+}
+
+.nav-header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
 }
 
 .app-name {
@@ -46,6 +52,92 @@ body {
 }
 
 .main {
+    display: flex;
+    flex-direction: column;
     background-color: #79ffbc;
+    flex: 1;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav-item {
+    display: flex;
+    gap: 10px;
+    padding: 0.7rem 1.2rem;
+}
+
+.clicked {
+    background-color: #00000017;
+}
+
+.item-count {
+    margin-left: auto;
+    opacity: 0.5;
+    padding-right: 0.1rem;
+}
+
+.item-name-text {
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.date-created {
+    font-size: 0.7rem;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
     width: 70%;
+}
+
+.item {
+    display: flex;
+    gap: 10px;
+    padding: 0rem 0.8rem;
+    margin-bottom: 0.11rem;
+    background-color: #ffffff;
+    align-items: center;
+    height: 60px;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: end;
+    width: 70%;
+    margin-top: 4rem;
+    margin-bottom: 0.8rem;
+}
+
+.remove {
+    background-color: #ff5f5f;
+    color: #ffffff;
+    border: none;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-status {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
 }

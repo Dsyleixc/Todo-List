@@ -9,14 +9,45 @@
     <body>
         <div id="app">
             <div class="nav-bar">
-                <div class="app-name">Todo List</div>
-                <div class="user">
-                    <img src="https://github.com/Dsyleixc.png" alt="profile-pic" class="profile-pic" />
-                    <p class="username">@Dsyleixc</p>
+                <div class="nav-header">
+                    <div class="app-name">Todo List</div>
+                    <div class="user">
+                        <img src="https://github.com/Dsyleixc.png" alt="profile-pic" class="profile-pic" />
+                        <p class="username">@Dsyleixc</p>
+                    </div>
                 </div>
-                <div class="list"></div>
+                <div class="nav-list">
+                    <div class="nav-item clicked">
+                        <div class="item-icon">🚀</div>
+                        <div class="item-name">Homework</div>
+                        <div class="item-count">5</div>
+                    </div>
+                    <div class="nav-item">
+                        <div class="item-icon">🚀</div>
+                        <div class="item-name">Homework</div>
+                        <div class="item-count">5</div>
+                    </div>
+                </div>
             </div>
-            <div class="main"></div>
+            <div class="main">
+                <div class="header">
+                    <div class="header-title">
+                        <div class="item-name">🚀 <span class="item-name-text">Homework</span></div>
+                        <div class="date-created">Created: 2025-03-20</div>
+                    </div>
+                    <button class="remove">Remove</button>
+                </div>
+                <div class="item-list">
+                    <div class="item">
+                        <img class="item-status" src="/public/unchecked.svg" alt="unchecked" />
+                        <div class="item-task">Homework</div>
+                    </div>
+                    <div class="item">
+                        <img class="item-status" src="/public/unchecked.svg" alt="unchecked" />
+                        <div class="item-task">Homework</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer"></div>
         <script type="module" src="/src/main.js"></script>
