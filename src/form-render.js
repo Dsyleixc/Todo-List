@@ -21,6 +21,12 @@ const setupFormVisibility = function () {
         closeForm();
     });
 
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            closeForm();
+        }
+    });
+
     formButton.addEventListener('click', function (e) {
         e.preventDefault();
         closeForm();
