@@ -8,7 +8,21 @@
     </head>
     <body>
         <div id="app">
-            <div class="form"></div>
+            <div class="form hidden">
+                <div class="form-header">Create New List</div>
+                <form action="" class="form-input">
+                    <div class="input-option">
+                        <label for="list-icon">List Icon</label>
+                        <input type="text" placeholder="Example: 🚀" id="list-icon" />
+                    </div>
+                    <div class="input-option">
+                        <label for="list-name">List Name</label>
+                        <input type="text" placeholder="Example: Homework" id="list-name" />
+                    </div>
+                    <button class="form-button">Create</button>
+                </form>
+            </div>
+            <div class="overlay hidden"></div>
 
             <div class="nav-bar">
                 <div class="nav-header">
@@ -51,6 +65,7 @@
                         <img class="item-status" src="/public/unchecked.svg" alt="unchecked" />
                         <div class="item-task">Homework</div>
                     </div>
+                    <div class="add-item-btn">+</div>
                 </div>
             </div>
         </div>
