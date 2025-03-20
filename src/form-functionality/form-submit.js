@@ -1,8 +1,8 @@
 'use strict';
 
-import { getLocalListData } from './get-local-data.js';
+import { getLocalListData } from '../get-local-data.js';
 import { listIcon, listName } from './form-intake.js';
-import { List } from './new-list.js';
+import { List } from '../new-list.js';
 
 const createBtn = document.querySelector('.form-button');
 

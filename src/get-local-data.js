@@ -1,10 +1,11 @@
 'use strict';
 
-let localListData = [];
+let localListData;
 
 const getLocalListData = function () {
     if (!localStorage.getItem('list')) {
-        localStorage.setItem('list', JSON.stringify([]));
+        localListData = [];
+        localStorage.setItem('list', JSON.stringify(localListData));
     } else {
         localListData = JSON.parse(localStorage.getItem('list'));
     }
