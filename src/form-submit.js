@@ -3,7 +3,6 @@
 import { getLocalListData } from './get-local-data.js';
 import { listIcon, listName } from './form-intake.js';
 import { List } from './new-list.js';
-import { clearForm } from './form-clear.js';
 
 const createBtn = document.querySelector('.form-button');
 
