@@ -3,7 +3,7 @@
 import { getLocalListData } from '../get-local-data.js';
 import { listIcon, listName } from './form-intake.js';
 import { List } from '../new-list.js';
-
+import { renderNavList } from '../nav-list-render.js';
 const createBtn = document.querySelector('.form-button');
 
 let list;
@@ -30,4 +30,5 @@ createBtn.addEventListener('click', function (e) {
 
     createList();
     submitList(list);
+    renderNavList();
 });
