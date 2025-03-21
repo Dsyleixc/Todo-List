@@ -2,8 +2,9 @@
 
 import { getLocalListData } from '../get-local-data.js';
 import { listIcon, listName } from './form-intake.js';
-import { List } from '../new-list.js';
-import { renderNavList } from '../nav-list-render.js';
+import { List } from '../nav-functionality/new-list.js';
+import { renderNavList } from '../nav-functionality/nav-list-render.js';
+
 const createBtn = document.querySelector('.form-button');
 
 let list;

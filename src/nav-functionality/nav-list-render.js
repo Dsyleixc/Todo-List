@@ -1,6 +1,6 @@
 'use strict';
 
-import { getLocalListData } from './get-local-data.js';
+import { getLocalListData } from '../get-local-data.js';
 
 let localListData;
 const navList = document.querySelector('.nav-list');
