@@ -217,6 +217,10 @@ body {
     font-size: 0.7rem;
 }
 
+.remove:hover {
+    background-color: #ca1e1e;
+}
+
 .header-title {
     display: flex;
     flex-direction: column;
