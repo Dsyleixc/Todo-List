@@ -22,4 +22,4 @@ class List {
     }
 }
 
-export { List };
+export { List, Item };

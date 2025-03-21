@@ -1,5 +1,7 @@
 'use strict';
 
+import { renderItems } from '../items-functionality/items-render';
+
 (function () {
     const navList = document.querySelector('.nav-list');
     let previousClickedList;
@@ -24,6 +26,7 @@
             newClickedList = e.target;
             removeClickedClass(previousClickedList);
             addClickedClass(newClickedList);
+            renderItems();
         }
     };
 

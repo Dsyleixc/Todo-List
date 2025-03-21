@@ -2,37 +2,36 @@
 
 import { renderItemInput, removeItemInput } from './items-input-render.js';
 import { submitItem } from './items-submit.js';
+import { renderItems } from './items-render.js';
 
-const addItemBtn = document.querySelector('.add-item-btn');
-const submitItemBtn = document.querySelector('.item-add');
-const cancelItemBtn = document.querySelector('.item-remove');
+// IIFE to encapsulate logic
+(function () {
+    const addItemBtn = document.querySelector('.add-item-btn');
+    const submitItemBtn = document.querySelector('.item-add');
+    const cancelItemBtn = document.querySelector('.item-remove');
 
-const hideAddItemBtn = function () {
-    addItemBtn.classList.add('hidden');
-};
+    const hideAddItemBtn = function () {
+        addItemBtn.classList.add('hidden');
+    };
 
-const showAddItemBtn = function () {
-    addItemBtn.classList.remove('hidden');
-};
+    const showAddItemBtn = function () {
+        addItemBtn.classList.remove('hidden');
+    };
 
-const submitItemHandler = function () {
     submitItemBtn.addEventListener('click', () => {
         submitItem();
         removeItemInput();
         showAddItemBtn();
+        renderItems();
     });
-};
 
-const cancelItemHandler = function () {
     cancelItemBtn.addEventListener('click', () => {
         removeItemInput();
         showAddItemBtn();
     });
-};
 
-addItemBtn.addEventListener('click', () => {
-    renderItemInput();
-    hideAddItemBtn();
-    submitItemHandler();
-    cancelItemHandler();
-});
+    addItemBtn.addEventListener('click', () => {
+        renderItemInput();
+        hideAddItemBtn();
+    });
+})();

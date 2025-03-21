@@ -1,5 +1,7 @@
 'use strict';
 
+import { Item } from '../nav-functionality/new-list';
+
 const itemInput = document.querySelector('.item-input-text');
 
 const getLists = function () {
@@ -8,7 +10,7 @@ const getLists = function () {
 };
 
 const getClickedListIndex = function () {
-    const clickedListName = document.querySelector('.clicked').textContent;
+    const clickedListName = document.querySelector('.clicked .item-name').textContent;
     const lists = getLists();
     // Find the index of the clicked list
     const index = lists.findIndex((list) => list.name === clickedListName);
@@ -21,8 +23,10 @@ const submitItem = function () {
     const lists = getLists();
     const inputText = itemInput.value;
     const index = getClickedListIndex();
-    lists[index].items.push(inputText);
+    lists[index].items.push(new Item(inputText));
     localStorage.setItem('list', JSON.stringify(lists));
+    itemInput.value = '';
+    console.log('fired');
 };
 
 export { submitItem };
