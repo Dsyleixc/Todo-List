@@ -258,3 +258,39 @@ body {
     background-color: #dfdfdf;
     cursor: pointer;
 }
+
+.item-input-text {
+    width: 90%;
+    height: 90%;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.item-add {
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem;
+    width: 70px;
+    cursor: pointer;
+}
+
+.item-add:hover {
+    background-color: #dfdfdf;
+}
+
+.item-remove {
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem;
+    width: 70px;
+    cursor: pointer;
+}
+
+.item-remove:hover {
+    background-color: #fa4646;
+}

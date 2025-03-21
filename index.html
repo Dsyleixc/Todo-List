@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vite App</title>
+        <title>ToDo List</title>
     </head>
     <body>
         <div id="app">
@@ -54,8 +54,13 @@
                         <img class="item-status" src="/public/unchecked.svg" alt="unchecked" />
                         <div class="item-task">Homework</div>
                     </div>
-                    <div class="add-item-btn">+</div>
+                    <div class="item item-input hidden">
+                        <input type="text" placeholder="Add a new item" class="item-input-text" />
+                        <button class="item-add">Add</button>
+                        <button class="item-remove">Cancel</button>
+                    </div>
                 </div>
+                <div class="add-item-btn">+</div>
             </div>
         </div>
         <div class="footer"></div>
